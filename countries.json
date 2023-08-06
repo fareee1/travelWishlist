@@ -1,142 +1,149 @@
 [
-    {
-        "id": 1,
-        "name": "Bhutan",
-        "alpha2Code": "BT",
-        "alpha3Code": "BTN",
-        "visited": false
-    },
-    {
-        "id": 2,
-        "name": "Canada",
-        "alpha2Code": "CA",
-        "alpha3Code": "CAN",
-        "visited": false
-    },
-    {
-        "id": 3,
-        "name": "Germany",
-        "alpha2Code": "DE",
-        "alpha3Code": "DEU",
-        "visited": false
-    },
-    {
-        "id": 4,
-        "name": "India",
-        "alpha2Code": "IN",
-        "alpha3Code": "IND",
-        "visited": false
-    },
-    {
-        "id": 5,
-        "name": "Japan",
-        "alpha2Code": "JP",
-        "alpha3Code": "JPN",
-        "visited": false
-    },
-    {
-        "id": 6,
-        "name": "Mexico",
-        "alpha2Code": "MX",
-        "alpha3Code": "MEX",
-        "visited": false
-    },
-    {
-        "id": 7,
-        "name": "Netherlands",
-        "alpha2Code": "NL",
-        "alpha3Code": "NLD",
-        "visited": false
-    },
-    {
-        "id": 8,
-        "name": "Russia",
-        "alpha2Code": "RU",
-        "alpha3Code": "RUS",
-        "visited": false
-    },
-    {
-        "id": 9,
-        "name": "South Africa",
-        "alpha2Code": "ZA",
-        "alpha3Code": "ZAF",
-        "visited": false
-    },
-    {
-        "id": 10,
-        "name": "Spain",
-        "alpha2Code": "ES",
-        "alpha3Code": "ESP",
-        "visited": false
-    },
-    {
-        "id": 11,
-        "name": "Sweden",
-        "alpha2Code": "SE",
-        "alpha3Code": "SWE",
-        "visited": false
-    },
-    {
-        "id": 12,
-        "name": "Switzerland",
-        "alpha2Code": "CH",
-        "alpha3Code": "CHE",
-        "visited": false
-    },
-    {
-        "id": 13,
-        "name": "Thailand",
-        "alpha2Code": "TH",
-        "alpha3Code": "THA",
-        "visited": false
-    },
-    {
-        "id": 14,
-        "name": "Turkey",
-        "alpha2Code": "TR",
-        "alpha3Code": "TUR",
-        "visited": false
-    },
-    {
-        "id": 15,
-        "name": "United Arab Emirates",
-        "alpha2Code": "AE",
-        "alpha3Code": "ARE",
-        "visited": false
-    },
-    {
-        "id": 16,
-        "name": "United Kingdom",
-        "alpha2Code": "GB",
-        "alpha3Code": "GBR",
-        "visited": false
-    },
-    {
-        "id": 17,
-        "name": "United States",
-        "alpha2Code": "US",
-        "alpha3Code": "USA",
-        "visited": false
-    },
-    {
-        "id": 18,
-        "name": "Australia",
-        "alpha2Code": "AU",
-        "alpha3Code": "AUS",
-        "visited": false
-    },
-    {
-        "id": 19,
-        "name": "Brazil",
-        "alpha2Code": "BR",
-        "alpha3Code": "BRA",
-        "visited": false
-    },
-    {
-        "id": 20,
-        "name": "China",
-        "alpha2Code": "CN",
-        "alpha3Code": "CHN",
-        "visited": false
-    }
+  {
+    "id": 1,
+    "name": "Bhutan",
+    "alpha2Code": "BT",
+    "alpha3Code": "BTN",
+    "visited": false
+  },
+  {
+    "id": 2,
+    "name": "Canada",
+    "alpha2Code": "CA",
+    "alpha3Code": "CAN",
+    "visited": false
+  },
+  {
+    "id": 3,
+    "name": "Germany",
+    "alpha2Code": "DE",
+    "alpha3Code": "DEU",
+    "visited": false
+  },
+  {
+    "id": 4,
+    "name": "India",
+    "alpha2Code": "IN",
+    "alpha3Code": "IND",
+    "visited": false
+  },
+  {
+    "id": 5,
+    "name": "Japan",
+    "alpha2Code": "JP",
+    "alpha3Code": "JPN",
+    "visited": false
+  },
+  {
+    "id": 6,
+    "name": "Mexico",
+    "alpha2Code": "MX",
+    "alpha3Code": "MEX",
+    "visited": false
+  },
+  {
+    "id": 7,
+    "name": "Netherlands",
+    "alpha2Code": "NL",
+    "alpha3Code": "NLD",
+    "visited": false
+  },
+  {
+    "id": 8,
+    "name": "Russia",
+    "alpha2Code": "RU",
+    "alpha3Code": "RUS",
+    "visited": false
+  },
+  {
+    "id": 9,
+    "name": "South Africa",
+    "alpha2Code": "ZA",
+    "alpha3Code": "ZAF",
+    "visited": false
+  },
+  {
+    "id": 10,
+    "name": "Spain",
+    "alpha2Code": "ES",
+    "alpha3Code": "ESP",
+    "visited": false
+  },
+  {
+    "id": 11,
+    "name": "Sweden",
+    "alpha2Code": "SE",
+    "alpha3Code": "SWE",
+    "visited": true
+  },
+  {
+    "id": 12,
+    "name": "Switzerland",
+    "alpha2Code": "CH",
+    "alpha3Code": "CHE",
+    "visited": true
+  },
+  {
+    "id": 13,
+    "name": "Thailand",
+    "alpha2Code": "TH",
+    "alpha3Code": "THA",
+    "visited": true
+  },
+  {
+    "id": 14,
+    "name": "Turkey",
+    "alpha2Code": "TR",
+    "alpha3Code": "TUR",
+    "visited": true
+  },
+  {
+    "id": 15,
+    "name": "United Arab Emirates",
+    "alpha2Code": "AE",
+    "alpha3Code": "ARE",
+    "visited": false
+  },
+  {
+    "id": 16,
+    "name": "United Kingdom",
+    "alpha2Code": "GB",
+    "alpha3Code": "GBR",
+    "visited": true
+  },
+  {
+    "id": 17,
+    "name": "United States",
+    "alpha2Code": "US",
+    "alpha3Code": "USA",
+    "visited": false
+  },
+  {
+    "id": 18,
+    "name": "Australia",
+    "alpha2Code": "AU",
+    "alpha3Code": "AUS",
+    "visited": false
+  },
+  {
+    "id": 19,
+    "name": "Brazil",
+    "alpha2Code": "BR",
+    "alpha3Code": "BRA",
+    "visited": true
+  },
+  {
+    "id": 20,
+    "name": "China",
+    "alpha2Code": "CN",
+    "alpha3Code": "CHN",
+    "visited": false
+  },
+  {
+    "name": "bosna5",
+    "alpha2Code": "bassss",
+    "alpha3Code": "bssssss",
+    "visited": true,
+    "id": 21
+  }
 ]

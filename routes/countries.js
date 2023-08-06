@@ -1,6 +1,9 @@
 const express = require("express");
 const router = express.Router();
 const { check, validationResult } = require("express-validator");
+const fs = require("fs");
+const path = require("path");
+const countriesFilePath = path.join(__dirname, "../countries.json");
 const countries = require("../countries.json");
 
 // Get all countries
@@ -23,18 +26,26 @@ router.get("/countries", (req, res) => {
     );
   }
 
-  const limitedCountries = sortedCountries.slice(0, 5);
+  // Limit the number of countries to 5 if limit=true query parameter is present
+  if (req.query.limit === "true") {
+    sortedCountries = sortedCountries.slice(0, 5);
+  }
 
-  // Render the countries.ejs template and pass the limitedCountries data to it
-  res.render("countries.ejs", { countries: limitedCountries });
+  // Render the countries.ejs template and pass the sortedCountries data to it
+  res.render("countries.ejs", { countries: sortedCountries });
 });
 
 // Add a new country
 router.post(
   "/countries/addCountry",
   [
-    // Use validation middleware
     check("name").notEmpty().withMessage("Name field cannot be empty."),
+    check("alpha2Code")
+      .notEmpty()
+      .withMessage("Alpha 2 Code field cannot be empty."),
+    check("alpha3Code")
+      .notEmpty()
+      .withMessage("Alpha 3 Code field cannot be empty."),
   ],
   (req, res) => {
     const errors = validationResult(req);
@@ -44,12 +55,9 @@ router.post(
     }
 
     const newCountry = req.body;
-
-    // Generate a unique ID for the new country
     const newCountryId = countries.length + 1;
     newCountry.id = newCountryId;
 
-    // Check if the country already exists based on alpha 2 code or alpha 3 code
     const existingCountry = countries.find(
       (country) =>
         country.alpha2Code === newCountry.alpha2Code ||
@@ -60,9 +68,10 @@ router.post(
       return res.status(400).json({ message: "Country already exists." });
     }
 
-    // Add the new country to the list
     countries.push(newCountry);
-    res.json(newCountry);
+    fs.writeFileSync(countriesFilePath, JSON.stringify(countries, null, 2));
+
+    res.redirect("/api/countries");
   }
 );
 

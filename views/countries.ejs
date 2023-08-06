@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -9,10 +10,28 @@
   <ul>
     <% countries.forEach(function(country) { %>
       <li>
-        <%= country.name %> - <%= country.alpha2Code %> - <%= country.alpha3Code %> - Visited: <%= country.visited %>
+        <%= country.id %> - <%= country.name %> - <%= country.alpha2Code %> - <%= country.alpha3Code %> - Visited: <%=
+                  country.visited %>
       </li>
       <% }); %>
   </ul>
+
+  <h2>Add a New Country</h2>
+  <form method="POST" action="/countries/addCountry">
+    <label for="name">Country Name:</label>
+    <input type="text" id="name" name="name" required><br>
+
+    <label for="alpha2Code">Alpha 2 Code:</label>
+    <input type="text" id="alpha2Code" name="alpha2Code" required><br>
+
+    <label for="alpha3Code">Alpha 3 Code:</label>
+    <input type="text" id="alpha3Code" name="alpha3Code" required><br>
+
+    <label for="visited">Visited:</label>
+    <input type="checkbox" id="visited" name="visited"><br>
+
+    <button type="submit">Add Country</button>
+  </form>
 </body>
 
 </html>
